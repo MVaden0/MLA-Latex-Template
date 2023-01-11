@@ -1,0 +1,139 @@
+\documentclass{article}
+\usepackage{tikz-qtree}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usetikzlibrary{arrows.meta,bending}
+
+\begin{document}
+    \begin{center}
+        \Large
+        \textbf{CSCI2720 Homework 3}
+            
+        \vspace{0.4cm}
+        \large
+            
+        \vspace{0.4cm}
+        \textbf{Michael Vaden}
+        
+        \vspace{0.9cm}
+        \textbf{\today}
+    \end{center}
+    \begin{enumerate}
+        \item[1.] (20 points) Construct an AVL tree using the following input (in the
+        given order) 50,26,72,12,11,25,68,45,55,77,47
+        Show which node got unbalanced, what rotation operation you need
+        to perform and all the intermediate steps as you are performing the
+        rotation operations (something similar to examples shown in the class)
+        
+        The tree is unbalanced and will need to be shifted right.
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3Unbalanced.png}
+        \end{center}
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3Balanced.png}
+        \end{center}
+
+        The tree is unbalanced and will need to be shifted left.
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3Unbalanced2.png}
+        \end{center}
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3Balanced2.png}
+        \end{center}
+
+        The tree is unbalanced and will need to be shifted left.
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3Unbalanced3.png}
+        \end{center}
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3Balanced3.png}
+        \end{center}
+
+        The tree is unbalanced and will need to be shifted left.
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3Unbalanced4.png}
+        \end{center}
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3Balanced4.png}
+        \end{center}
+
+        The tree is unbalanced and will need to be shifted right.
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3Unbalanced5.png}
+        \end{center}
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3Balanced5.png}
+        \end{center}
+        
+        \item[2.] (20 points) Construct a binary search tree using the following input
+        (in the given order) 50,26,72,12,11,94,53,99,67,98,37,80
+
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3AVLT.png}
+        \end{center}
+
+        \begin{enumerate}
+            \item[a)] Is the above tree a valid AVL tree? This is not a valid AVL tree because it doesn't
+            have a balance cofactor that is 0 or 1.
+
+            \item[b)] Delete the following nodes from the above tree using the AVL
+            delete (in the given order) 37,12,80,50,98,11
+            Show all you intermediate steps as you are deleting nodes from
+            the tree including the rotation operations (something similar to
+            examples shown in the class). 
+
+            Balance tree first.
+            \begin{center}
+                \includegraphics[scale=0.3]{HW3AVLT.png}
+            \end{center}
+            \begin{center}
+                \includegraphics[scale=0.3]{HW3AVLT2.png}
+            \end{center}
+            \begin{center}
+                \includegraphics[scale=0.3]{HW3AVLT3.png}
+            \end{center}
+            \begin{center}
+                \includegraphics[scale=0.3]{HW3AVLT4.png}
+            \end{center}
+            \begin{center}
+                \includegraphics[scale=0.3]{HW3AVLT5.png}
+            \end{center}
+            \begin{center}
+                \includegraphics[scale=0.3]{HW3AVLT6.png}
+            \end{center}
+            \begin{center}
+                \includegraphics[scale=0.3]{HW3AVLT7.png}
+            \end{center}
+
+        \end{enumerate}
+
+        \item[3.] (20 points) Construct a red black tree using the following input (in
+        the given order) 50,26,72,37,28,15,17,24
+        Show all your intermediate steps including the recoloring and 
+        restructuring operations (something similar to examples shown in the class)
+    
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3RBT.png}
+        \end{center}
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3RBT2.png}
+        \end{center}
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3RBT3.png}
+        \end{center}
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3RBT4.png}
+        \end{center}
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3RBT5.png}
+        \end{center}
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3RBT6.png}
+        \end{center}
+        \begin{center}
+            \includegraphics[scale=0.3]{HW3RBT7.png}
+        \end{center}
+        
+        
+    \end{enumerate}
+\end{document}
